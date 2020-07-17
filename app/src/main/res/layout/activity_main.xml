@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#F7C122"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/display"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <ViewFlipper
+            android:id="@+id/viewflip"
+            android:layout_width="match_parent"
+            android:layout_height="297dp"
+            android:layout_x="0dp"
+            android:layout_y="44dp"
+            android:autoStart="true"
+            android:flipInterval="5000">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/img1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/img2"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/img3"
+                tools:ignore="ContentDescription" />
+        </ViewFlipper>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="158dp"
+            android:layout_height="41dp"
+            android:layout_x="9dp"
+            android:layout_y="359dp"
+            android:text="Image Name:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/image_name"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_x="183dp"
+            android:layout_y="355dp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/imgsrc"
+            android:layout_width="158dp"
+            android:layout_height="41dp"
+            android:layout_x="11dp"
+            android:layout_y="417dp"
+            android:text="Image Source:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_x="186dp"
+            android:layout_y="414dp"
+            android:text="..."
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/addbtn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_x="18dp"
+            android:layout_y="471dp"
+            android:text="Add Image" />
+
+        <Button
+            android:id="@+id/getbtn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_x="195dp"
+            android:layout_y="472dp"
+            android:text="View All" />
+
+        <Button
+            android:id="@+id/deldata"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_x="17dp"
+            android:layout_y="523dp"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/updatedata"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_x="197dp"
+            android:layout_y="523dp"
+            android:text="UPDATE" />
+
+    </AbsoluteLayout>
+
+</RelativeLayout>
+

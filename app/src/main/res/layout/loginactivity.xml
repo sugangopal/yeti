@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/wel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_x="-3dp"
+            android:layout_y="154dp"
+            android:text="WELCOME"
+            android:textAlignment="center"
+            android:textColor="#098203"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="158dp"
+            android:layout_height="41dp"
+            android:layout_x="9dp"
+            android:layout_y="359dp"
+            android:text="Username:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_x="183dp"
+            android:layout_y="355dp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="158dp"
+            android:layout_height="41dp"
+            android:layout_x="11dp"
+            android:layout_y="417dp"
+            android:text="Password:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_x="186dp"
+            android:layout_y="415dp"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_x="23dp"
+            android:layout_y="511dp"
+            android:text="LOG IN" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_x="200dp"
+            android:layout_y="510dp"
+            android:text="REGISTER" />
+
+    </AbsoluteLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/wel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_x="0dp"
+            android:layout_y="21dp"
+            android:text="REGISTRATION"
+            android:textAlignment="center"
+            android:textColor="#098203"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="158dp"
+            android:layout_height="41dp"
+            android:layout_x="3dp"
+            android:layout_y="96dp"
+            android:text="FULL NAME:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_x="174dp"
+            android:layout_y="93dp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="158dp"
+            android:layout_height="41dp"
+            android:layout_x="4dp"
+            android:layout_y="163dp"
+            android:text="USERNAME"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/user1"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_x="179dp"
+            android:layout_y="161dp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/pass1"
+            android:layout_width="158dp"
+            android:layout_height="41dp"
+            android:layout_x="3dp"
+            android:layout_y="244dp"
+            android:text="PASSWORD:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/pas1"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_x="177dp"
+            android:layout_y="240dp"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/pass2"
+            android:layout_width="163dp"
+            android:layout_height="58dp"
+            android:layout_x="3dp"
+            android:layout_y="319dp"
+            android:text="CONFIRM PASSWORD:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/pas2"
+            android:layout_width="200dp"
+            android:layout_height="41dp"
+            android:layout_x="181dp"
+            android:layout_y="333dp"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_x="96dp"
+            android:layout_y="470dp"
+            android:text="REGISTER" />
+
+    </AbsoluteLayout>
+
+</RelativeLayout>
+
